@@ -32,7 +32,7 @@ public class DivideTest {
 	@Test
 	public void testGetValue() {
 		Assert.assertNotNull(this.div);
-		Assert.assertEquals(200, this.div.getValue());
+		Assert.assertEquals(20, this.div.getValue());
 	}
 
 }
