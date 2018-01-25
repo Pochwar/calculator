@@ -13,9 +13,9 @@ public class Application {
 	 * @param args
 	 */
 	public static void main() {
-		final int myNumber = 1;
 		
-		final Addition add = new Addition(myNumber);
+		
+		final Addition add = new Addition(1);
 		
 		add.make(5);
 		Logger.getLogger(String.valueOf(add.getValue()));
