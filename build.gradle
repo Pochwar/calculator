@@ -88,3 +88,7 @@ task cpdMain(dependsOn: 'pmdMain') {
   }
 }
 check.dependsOn cpdMain
+
+task myJavadocs(type: Javadoc) {
+  source = sourceSets.main.allJava
+}
