@@ -1,24 +1,36 @@
 /**
- * 
- */
-package com.pochwar.calculator;
-
-/**
  * @author poch
  *
  */
+package com.pochwar.calculator;
+
 public class Addition {
 	
-	protected int value = 0;
+	/**
+	 * Value on which we will make addition
+	 */
+	protected transient int value;
 	
-	public Addition (int i) {
-		this.value = i;
+	/**
+	 * Class constructor to set value
+	 * @param valueToSet
+	 */
+	public Addition (final int valueToSet) {
+		this.value = valueToSet;
 	}
 	
-	public void make(int b) {		
-		this.value += b;
+	/**
+	 * Method to make the addition
+	 * @param valueToAdd
+	 */
+	public void make(final int valueToAdd) {		
+		this.value += valueToAdd;
 	}
 	
+	/**
+	 * Metho to get the current value
+	 * @return
+	 */
 	public int getValue() {
 		return this.value;
 	}

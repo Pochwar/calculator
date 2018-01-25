@@ -1,3 +1,7 @@
+/**
+ * @author poch
+ *
+ */
 package com.pochwar.calculator;
 
 public class Divide {
