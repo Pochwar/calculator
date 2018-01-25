@@ -3,6 +3,7 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'findbugs'
 apply plugin: 'pmd'
+apply plugin: 'checkstyle'
 
 repositories {
 	mavenCentral()
@@ -53,6 +54,10 @@ pmd {
         'java-unnecessary',
         'java-unusedcode'           
         ]
+}
+
+checkstyle {
+    toolVersion = '7.2'
 }
 
 /*
