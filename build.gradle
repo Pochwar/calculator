@@ -62,6 +62,7 @@ pmd {
 checkstyle {
     toolVersion = '7.2'
     ignoreFailures = true
+    sourceSets = [sourceSets.main]
 }
 
 // CPD Hack
@@ -89,3 +90,9 @@ task cpdMain(dependsOn: 'pmdMain') {
   }
 }
 check.dependsOn cpdMain
+
+jacoco {
+    toolVersion = "0.7.9"
+    reportsDir = file("$buildDir/customJacocoReportDir")
+}
+
