@@ -7,7 +7,9 @@ package com.pochwar.calculator;
 
 import java.util.logging.Logger;
 
-public class Application {
+public final class Application {
+	
+	private Application() {}
 
 	/**
 	 * @param args
