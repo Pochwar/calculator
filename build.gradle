@@ -2,8 +2,8 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'findbugs'
-apply plugin: 'pmd'
-apply plugin: 'checkstyle'
+//apply plugin: 'pmd'
+//apply plugin: 'checkstyle'
 
 repositories {
 	mavenCentral()
@@ -14,11 +14,13 @@ dependencies {
 }
 
 findbugs {
-  ignoreFailures = true
-  //toolVersion = "2.0.1"
-  //sourceSets = [sourceSets.main]
-  reportsDir = file("$project.buildDir/reports/findbugs")
-  effort = "max"
+	ignoreFailures = true
+	//toolVersion = "2.0.1"
+	//sourceSets = [sourceSets.main]
+	reportsDir = file("$project.buildDir/reports/findbugs")
+	effort = "max"
+	showProgress = true
+    reportLevel = "high"
 }
 
 pmd {

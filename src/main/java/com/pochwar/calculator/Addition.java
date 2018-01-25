@@ -13,15 +13,21 @@ public class Addition {
 	
 	public Addition (int i) {
 		this.value = i;
-		
 	}
 	
-	public void make(int b) {
+	public void make(int b) {		
 		this.value += b;
 	}
 	
 	public int getValue() {
 		return this.value;
+	}
+	
+	public void dumb() {
+		this.value = 15;
+		if (this.value == 15 && this.value != 15) {
+			System.out.println("DUMB");
+		}
 	}
 
 }

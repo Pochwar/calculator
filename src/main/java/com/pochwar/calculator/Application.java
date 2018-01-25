@@ -22,7 +22,6 @@ public class Application {
 		
 		add.make(8);		
 		System.out.println(add.getValue());
-
 	}
 
 }
