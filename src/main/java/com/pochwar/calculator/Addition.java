@@ -6,6 +6,9 @@ package com.pochwar.calculator;
 
 public class Addition {
 	
+	/**
+	 * initial value used along the application
+	 */
 	protected transient int value;
 	
 	/**

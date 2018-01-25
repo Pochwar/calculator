@@ -11,6 +11,9 @@ public final class Application {
 	
 	private Application() {}
 
+	/**
+	 * main method of the application
+	 */
 	public static void main() {
 		
 

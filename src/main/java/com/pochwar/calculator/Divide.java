@@ -6,6 +6,9 @@ package com.pochwar.calculator;
 
 public class Divide {
 
+	/**
+	 * initial value
+	 */
 	protected transient int value;
 	
 	/**
