@@ -3,7 +3,6 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'findbugs'
 apply plugin: 'pmd'
-//apply plugin: 'checkstyle'
 
 repositories {
 	mavenCentral()
@@ -11,6 +10,14 @@ repositories {
 
 dependencies {
 	compile 'junit:junit:4.12'
+}
+
+findbugs {
+  ignoreFailures = true
+  //toolVersion = "2.0.1"
+  //sourceSets = [sourceSets.main]
+  reportsDir = file("$project.buildDir/reports/findbugs")
+  effort = "max"
 }
 
 pmd {
