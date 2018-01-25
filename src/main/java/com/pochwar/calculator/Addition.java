@@ -22,12 +22,5 @@ public class Addition {
 	public int getValue() {
 		return this.value;
 	}
-	
-	public void dumb() {
-		this.value = 15;
-		if (this.value == 15 && this.value != 15) {
-			System.out.println("DUMB");
-		}
-	}
 
 }
