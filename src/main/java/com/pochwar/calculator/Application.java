@@ -2,7 +2,10 @@
  * @author poch
  *
  */
+
 package com.pochwar.calculator;
+
+import java.util.logging.Logger;
 
 public class Application {
 
@@ -10,15 +13,16 @@ public class Application {
 	 * @param args
 	 */
 	public static void main() {
-		int myNumber = 1;
+		final int myNumber = 1;
 		
-		Addition add = new Addition(myNumber);
+		final Addition add = new Addition(myNumber);
 		
-		add.make(5);		
-		System.out.println(add.getValue());
+		add.make(5);
+		Logger.getLogger(String.valueOf(add.getValue()));
+		
 		
 		add.make(8);		
-		System.out.println(add.getValue());
+		Logger.getLogger(String.valueOf(add.getValue()));
 	}
 
 }

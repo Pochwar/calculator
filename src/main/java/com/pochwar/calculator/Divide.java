@@ -5,21 +5,36 @@
 package com.pochwar.calculator;
 
 public class Divide {
-	protected int value;
+	/**
+	 * Value on which we will make divide
+	 */
+	protected transient int value;
 	
-	public Divide(int a) {
-		this.value = a;
+	/**
+	 *  Class constructor to set value
+	 * @param valueToSet
+	 */
+	public Divide(final int valueToSet) {
+		this.value = valueToSet;
 	}
 	
-	public void make(int b) {
-		if(b == 0) {
+	/**
+	 * Method to make the divide
+	 * @param divider
+	 */
+	public void make(final int divider) {
+		if(divider == 0) {
 			this.value = Integer.MIN_VALUE;
 		} else {
-			this.value = this.value / b;
+			this.value = this.value / divider;
 		}
 		
 	}
 	
+	/**
+	 * Metho to get the current value
+	 * @return
+	 */
 	public int getValue() {
 		return this.value;
 	}
