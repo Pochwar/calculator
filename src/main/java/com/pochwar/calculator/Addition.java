@@ -6,30 +6,24 @@ package com.pochwar.calculator;
 
 public class Addition {
 	
-	/**
-	 * Value on which we will make addition
-	 */
 	protected transient int value;
 	
 	/**
-	 * Class constructor to set value
-	 * @param valueToSet
+	 * @param valueToSet value to set
 	 */
 	public Addition (final int valueToSet) {
 		this.value = valueToSet;
 	}
 	
 	/**
-	 * Method to make the addition
-	 * @param valueToAdd
+	 * @param valueToAdd value to add
 	 */
 	public void make(final int valueToAdd) {		
 		this.value += valueToAdd;
 	}
 	
 	/**
-	 * Metho to get the current value
-	 * @return
+	 * @return current value
 	 */
 	public int getValue() {
 		return this.value;

@@ -11,12 +11,9 @@ public final class Application {
 	
 	private Application() {}
 
-	/**
-	 * @param args
-	 */
 	public static void main() {
 		
-		
+
 		final Addition add = new Addition(1);
 		
 		add.make(5);
